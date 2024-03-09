@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,555;1,555&display=swap"
+    />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <h1 id="title">Tic Tac Toe</h1>
+      <p class="winner"></p>
+      <div class="button-container">
+        <button onclick="reload()" id="replayBtn" style="display: none">
+          Replay
+        </button>
+      </div>
+      <table class="tic-tac-toe">
+        <tr>
+          <td class="board" id="board1" onclick="clicked(this)"></td>
+          <td class="board" id="board2" onclick="clicked(this)"></td>
+          <td class="board" id="board3" onclick="clicked(this)"></td>
+        </tr>
+        <tr>
+          <td class="board" id="board1" onclick="clicked(this)"></td>
+          <td class="board" id="board2" onclick="clicked(this)"></td>
+          <td class="board" id="board3" onclick="clicked(this)"></td>
+        </tr>
+        <tr>
+          <td class="board" id="board4" onclick="clicked(this)"></td>
+          <td class="board" id="board4" onclick="clicked(this)"></td>
+          <td class="board" onclick="clicked(this)"></td>
+        </tr>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
